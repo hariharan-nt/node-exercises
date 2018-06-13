@@ -1,0 +1,2 @@
+hello from message.txt file
+hi just now changed this via cmd line
