@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1> DOG.ejs file</h1>
+
+<h2> Welcome home <%=user.toUpperCase()%> </h2>
+
+<% if(user.toUpperCase() === "HARI"){%>
+<p>hi Hari..... within if </p>
+<% } else { %>
+    <p> From the else part</p>
+<% } %>
+
+<% include partials/footer %>

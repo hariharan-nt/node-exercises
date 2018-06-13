@@ -1,0 +1,27 @@
+<% include partials/header %>
+    
+    
+    
+<h1> The posts page</h1>
+
+<!--posts is the variable-->
+<!--only  "%" is for conditional and statements which isnt added to the html-->
+<!--%= is used for returning values to be added to the html page-->
+
+<!--using for loop-->
+
+<%for(var i=0; i< posts.length; i++){%>
+<li>
+    <%=posts[i].title%>--<strong><%=posts[i].author%></strong> 
+    </li>
+<% } %>
+
+
+<!--using for each-->
+<% posts.forEach(function(p) { %>
+<li>
+    <%=p.title%>--<strong><%=p.author%></strong> 
+</li>
+<% }); %>
+
+<% include partials/footer %>
